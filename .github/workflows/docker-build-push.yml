@@ -29,8 +29,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t hkshitesh/demorefund .
+        run: docker build -t lukiovas11/refunds-api .
 
       - name: Push Docker image
-        run: docker push hkshitesh/demorefund 
+        run: docker push lukiovas11/refunds-api 
 
